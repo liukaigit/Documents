@@ -183,3 +183,13 @@
     结果如下：
     mysql  Ver 14.14 Distrib 5.6.32, for Linux (x86_64) using  EditLine wrapper
     ```
+
+**22、sftp基本指令**
+- 操作远程服务器指令
+    - `cd ls pwd mv mkdir rm rmdir`   
+- 操作本机指令
+    - `lcd lls lpwd`
+- 上传到远程服务器
+    - `put xxx`
+- 下载到本机
+    - `get xxx`
