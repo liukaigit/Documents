@@ -193,3 +193,11 @@
     - `put xxx`
 - 下载到本机
     - `get xxx`
+
+**23、关闭mysqld服务**
+- 借助`mysqladmin`指令进行服务关闭，指令如下所示：
+    ```
+    # mysqladmin -uuser -ppassword -h `hostname` shutdown
+    其中通过-h指定当前主机名，工作过程有发现hostname被修改成非localhost，命令默认链接localhost所以该出需注意；
+    shutdown参数用来关闭服务，其他参数如version（版本），status（状态）等
+    ```
