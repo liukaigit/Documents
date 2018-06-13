@@ -175,3 +175,10 @@
         `ipset create mylist hash:ip timeout 10` 
     - 添加iptables规则
         `ipset add mylist xxx.xxx.xxx.xxx`
+**21、mysql版本查看**
+- 快速查看mysql版本，先确保`mysqld`服务已经正常运行，然后借助`help`命令查看版本，命令如下：
+    ```
+    \# mysql --help| grep Distrib
+    结果如下：
+        mysql  Ver 14.14 Distrib 5.6.32, for Linux (x86_64) using  EditLine wrapper
+    ```
