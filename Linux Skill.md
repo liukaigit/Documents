@@ -241,3 +241,30 @@
     # du -h a.dump
     937M	a.dump
     ```
+
+**28、md5sum校验**
+- linux系统安装后自带该md5生成和校验工具，常用的参数如下所示：
+    - `-t`              默认文本文件模式读入文件
+    - `-c或--check`     用来读取指定的md5信息校验文本的一致性
+    - `--status`        配合`--check`参数校验过程中无输出，通过返回值的方式给出结果，0表示一致，1表示不一致；
+- 示例
+    ```
+    # cat md5.txt               //待校验文件
+    This is a test file.    
+    # md5sum md5.txt > m.md5    //生成md5值
+    # md5sum -c m.md5           //检测一致性
+    md5.txt: OK
+    # md5sum -c --status m.md5  //屏蔽check输出，返回值标志一致性
+    # echo $?
+    0                           //一致
+    # echo "add" >> md5.txt     //修改文件
+    # cat md5.txt
+    This is a test file.
+    add
+    # md5sum -c m.md5           //重新检查一致性
+    md5.txt: FAILED
+    md5sum: WARNING: 1 computed checksum did NOT match
+    # md5sum -c --status m.md5
+    # echo $?
+    1                           //不一致
+    ```
