@@ -276,17 +276,17 @@
     - 结合命令`:%!xxd`进入十六进制个格式，可以进行编辑，编辑只对十六进制修改有效，编辑完成后通过命令`:%!xxd -r`退出
     
 **30、shell截取字符串**
-- 截取分隔符右边字符
+- 截取分隔符string右边字符
     ```
     示例：var=mysql.0001
-    # num=${var#*.}
+    # num=${var#*string}
     # echo ${num}
     0001
     ```
-- 截取分隔符左边字符
+- 截取分隔符string左边字符
     ```
     示例：var=mysql.0001
-    # name=${var%.*}
+    # name=${var%string*}
     # echo ${name}
     mysql
     ```
