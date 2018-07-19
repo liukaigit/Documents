@@ -292,3 +292,46 @@
     # echo ${name}
     mysql
     ```
+
+**31、sed常用命令**
+- 注意`-i`选项是表示会直接编辑文件，若是不家该参数，将只是输出处理的结果，原有文件内容不变
+- 替换字符串
+    ```
+    示例：test.txt，替换'file'为'script'
+    # cat test.txt
+    -b
+    This is a test file. 
+    -e
+    # sed -i 's/file/script/g' test.txt        //-i 参数直接修改替换，不打印，若是不加选项将打印所有文件，s表示指定替换字符串，g所有都替换
+    -b
+    This is a test script. 
+    -e
+    # cat test.txt
+    -b
+    This is a test script. 
+    -e
+    # sed -i 's/Th/th/g'
+    ```
+ - 获取指定特征的文件多行
+    ```
+    示例：
+    # cat test.txt
+    -b
+    This is a test script. 
+    -e
+    # sed -ne '/Th/,/-e/p' test.txt             //p参数表示打印匹配的行
+    This is a test file. 
+    -e
+    # sed -ne '/Th/,/-e/w a.txt' test.txt       //w表示将匹配的所有行写入到文件a.txt中
+    # cat a.txt
+    This is a test file. 
+    -e
+    ```
+ - 删除匹配行
+    ```
+    示例：sed '/xx/d' file，若需要改变原有文件需要添加参数 -i
+    # sed '/abc/d' file     //表示输出删除了匹配字符串abc的行
+    # sed '/^$/d' file      //表示输出删除所有空白行
+    # sed '2d'  file        //表示输出删除第2行
+    ...
+    ```
