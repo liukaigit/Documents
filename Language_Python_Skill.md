@@ -2,8 +2,8 @@
 - Make the script importable and executable.
   -  脚本模块既可以导入到其他模块使用，也可以模块本身运行
  
-**2、面向对象**
--  创建类示例调用：
+**2、\_\_init\_\_**
+-  创建类实例时调用进行初始化：
   ```
   class XyyTzz:
     def __init__(self):
