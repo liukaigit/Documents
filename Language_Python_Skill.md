@@ -36,3 +36,25 @@
   This is a test.
   ```
   
+**4、os模块**
+- 对目录和文件操作常用的方法列表
+- `os.listdir('dir')`
+  - 列出指定`dir`目录内文件和子目录
+- `os.path.exists('file or dir')`
+  - 检查文件或路径是否存在
+- `os.path.isfile('file')`
+  - 检查是否为文件
+- `os.path.isdir('dir')`
+  - 检查是否为目录
+- `os.path.basename('path/filename')`
+  - 提取`filename`返回
+- `os.path.split('path/filename')`
+  - 路径文件分割，结果`('path','filename')`
+- `os.path.splitext('filename')`
+  - 文件名名称和扩展名分割，结果`('名称','扩展名')`
+- `os.path.join('path','filename')`
+  - 路径文件名拼接，结果`path/filename`
+- `os.getsize('file')`
+  - 获取文件大小
+`...`
+  
