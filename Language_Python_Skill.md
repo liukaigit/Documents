@@ -12,3 +12,27 @@
     
     ...
   ```
+  
+**3、自定义module**
+- python2.7安装目录，添加自定义模块目录，简单示例：
+  - 创建目录如下：
+  ```
+  |-- __init__.py       
+  |-- __init__.pyc
+  |-- const.py
+  `-- const.pyc
+  ```
+  - `__init__.py`一般为空，作用是将文件夹变成一个python模块
+  - `const.py`里面封装模块方法，本示例放置变量供测试
+  ```
+  # cat const.py
+  # coding=utf-8
+  TEST_NAME = 'This is a test.'
+  ```
+  - 终端测试调用`const`里面的变量`TEST_NAME`，示例如下所示：
+  ```
+  >>> from  mytest import const
+  >>> print "%s" % const.TEST_NAME
+  This is a test.
+  ```
+  
