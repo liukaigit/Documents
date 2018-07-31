@@ -56,7 +56,8 @@
   - 路径文件名拼接，结果`path/filename`
 - `os.getsize('file')`
   - 获取文件大小
-`...`
+- `os.WNOHANG`
+  - os.waitpid()的选项，当没有子进程状态是返回（0，0）
   
 **5、ConfigParser模块**
 - 该模块为python解析配置文件标准库，配置文件格式如下：
