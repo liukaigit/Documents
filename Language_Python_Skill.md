@@ -58,3 +58,35 @@
   - 获取文件大小
 `...`
   
+**5、ConfigParser模块**
+- 该模块为python解析配置文件标准库，配置文件格式如下：
+  ```
+  [section1]
+  option1 = 12
+  option2 = 'test'
+  
+  [section2]
+  option1 = 'test2'
+  option2 = 23
+  
+  ...
+  ```
+- 常用的方法如下
+  - 加载配置文件，创建对象`config`，然后通过调用对象方法`read`加载配置文件
+  ```
+  config = ConfigParser.ConfigParser()
+  config.read(configpath)
+  ```
+  - 获取配置文件所有`section（section1,section2）`
+  ```
+  config.sections()
+  ```
+  - 获取指定`section1`的选项所有参数`option`
+  ```
+  config.options(section1)
+  ```
+  - 获取指定`section1`的`option1`的值
+  ```
+  config.get(section1,option1)
+  ```
+
