@@ -143,6 +143,7 @@
     - `-bash: ./shellcode: /bin/bash^M: bad interpreter: No such file or directory`
 - 解决方法，打开shell文件运行命令，修改文件格式：
     - `set fileformat=unix`
+    - `set ff=unix`
 
 **15、修改网卡MAC地址**
 - 临时修改，设备重启或者network服务重启后失效
