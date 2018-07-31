@@ -157,3 +157,26 @@
   [('a', 1), ('c', 3), ('d', 3), ('b', 5), ('d', 6)]
   >>>
   ```
+
+**9、对象类型比较方法isinstance**
+- 语法：`isinstance(object,classinfo)`
+- 示例1：
+  ```
+  >>> a = 1
+  >>> isinstance(a,int)
+  True
+  >>> isinstance(a,float)
+  False
+  >>>
+  ```
+- 示例2，类对象比较
+  ```
+  >>> class Test:
+  ...     def __init__(self):
+  ...         self.a = 1
+  ... 
+  >>> test = Test()
+  >>> isinstance(test,Test)
+  True
+  >>>
+  ```
