@@ -91,3 +91,20 @@
   config.get(section1,option1)
   ```
 
+**6、字符串前后缀检查**
+- 前缀检查`str`字符串是否包含前缀`prefix`，格式：`str.startswith(prefix)`
+  ```
+  >>> str = "This is a test."
+  >>> prefix = 'This'
+  >>> str.startswith(prefix)
+  True
+  >>>
+  ```
+- 后缀检查`str`字符串是否包含后缀`suffix`，格式：`str.endswith(suffix)`
+  ```
+  >>> str = "This is a test."
+  >>> suffix = 'est.'
+  >>> str.endswith(suffix)
+  True
+  >>>
+  ```
