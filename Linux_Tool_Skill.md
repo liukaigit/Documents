@@ -351,9 +351,13 @@
     
  **33、pip**
  - 查询列表
-    `pip list`
+    - `pip list`
  - 安装
-    `pip install xxx.whl`
-    `参数 --ignore-installed 忽略已安装信息，强制安装`
+    - `pip install xxx.whl`
+    - `参数 --ignore-installed 忽略已安装信息，强制安装`
  - 库信息，可以查看依赖库信息
-    `pip show 库名`
+    - `pip show 库名`
+
+**33、mysql**
+- 限制显示行数方法，示例限制只显示满足条件的一行数据
+    - `select * from table_name limit 1`
