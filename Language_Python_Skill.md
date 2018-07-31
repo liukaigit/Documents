@@ -57,7 +57,9 @@
 - `os.getsize('file')`
   - 获取文件大小
 - `os.WNOHANG`
-  - os.waitpid()的选项，当没有子进程状态是返回（0，0）
+  - `os.waitpid()`的选项，当没有子进程状态是返回`（0，0）`
+- `os.chmod('keyfile',0oxxx)`
+  - `os.chmod('./test.sh',0o777)`将当前目录`test.sh`文件权限修改成`777`注意`0o`
   
 **5、ConfigParser模块**
 - 该模块为python解析配置文件标准库，配置文件格式如下：
