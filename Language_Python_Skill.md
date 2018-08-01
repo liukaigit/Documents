@@ -186,3 +186,40 @@
 **10、作用域**
 - 全局变量能够被文件任何地方调用，但修改只能全局操作；
 - 局部变量只在函数内部使用，若是没有找到所需变量，则往外进行查找。
+
+**11、装饰器wrapper**
+- 直接看示例，不考虑参数，若是考虑参数的情况可用：`(*args, **kwarg)`：
+  ```
+  def dec1(func):
+    print "one+++"
+    def one():
+        print "one---start-----"
+        func()
+        print "one----end-------"
+    return one
+
+
+  def dec2(func):
+    print "two+++"
+    def two():
+        print "two-----start----"
+        func()
+        print "two------end-----"
+    return two
+
+  @dec1
+  @dec2
+  def test():
+    print "My name is %s" % __name__
+
+  test()
+  结果：
+  two+++
+  one+++
+  one---start-----
+  two-----start----
+  My name is __main__
+  two------end-----
+  one----end-------
+  ```
+
