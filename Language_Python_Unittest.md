@@ -2,10 +2,12 @@
 
 **1、环境搭建**
 - 覆盖率检测工具`coverage`
-  - 资源：`coverage-4.5.1-cp27-cp27mu-manylinux1_x86_64.whl`
-  - 下载地址：`https://pypi.org/project/coverage/#files`
+  - 资源：
+    - `coverage-4.5.1-cp27-cp27mu-manylinux1_x86_64.whl`
+  - 下载地址：
+    - `https://pypi.org/project/coverage/#files`
   - 安装前提win7系统已经安装python2.7（跟上述的工具包版本信息cp27对应），安装命令如下：
-  `安装路径\python27\Scripts>pip.exe install 安装包路径\coverage-4.5.1-cp27-cp27m-win_amd64.whl`
+    - `安装路径\python27\Scripts>pip.exe install 安装包路径\coverage-4.5.1-cp27-cp27m-win_amd64.whl`
  
 **2、创建包**
 - 目录结构如下
@@ -46,6 +48,7 @@
 
   if __name__ == '__main__':
     unittest.main()
+    
   独立运行结果：
     3 + 4 = 7
   ```
