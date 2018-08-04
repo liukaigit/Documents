@@ -231,6 +231,18 @@
   func()
   ```
 - func的命名空间随函数开始而开始，结束而销毁
+- 函数也有属性，可以把函数当作参数一样传递给其他函数，示例：
+  ```
+  def add(x,y):
+    return x + y
+
+  def apply(test, x, y):
+    return test(x, y)
+
+  print apply(add, 3, 4)
+  运行结果：
+    7
+  ```
 
 **13、获取函数名**
 - 方法一：引用函数名直接调用参数`__name__`，如下示例：
