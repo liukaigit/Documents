@@ -230,3 +230,20 @@
     return 0
   func()
   ```
+
+**13、获取函数名**
+- 通过添加装饰器的方法获取函数名，如下示例：
+  ```
+  def get_funcname(func):
+    def run():
+        print func.__name__
+        func()
+    return run
+
+  @get_funcname
+  def myprint():
+    print "This is a test."
+  运行结果：
+    myprint
+    This is a test.
+  ```
