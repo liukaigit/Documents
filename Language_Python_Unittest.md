@@ -78,3 +78,12 @@
 - 执行覆盖率检测结果html信息命令如下：
   - `安装路径\coverage.exe html`
   - 上述命令执行成功后，在当前路径下生存子目录`htmlcov`，可以用浏览器打开`index.html`查看结果
+  ```
+  Coverage report: 92% Show keyboard shortcuts 
+  filter...
+  Module	statements	missing	excluded	coverage
+  Total	13	1	0	92%
+  myapi.py	5	1	0	80%
+  test.py	8	0	0	100%
+  ```
+  - 可以在页面点击文件，文件内部被标记成绿色的行，表示代码有执行，测试用例覆盖。
