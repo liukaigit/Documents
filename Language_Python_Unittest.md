@@ -84,9 +84,9 @@
   ```
   Coverage report: 92% Show keyboard shortcuts 
   filter...
-  Module	  statements	missing	excluded	coverage
-  Total	    13	        1	      0	        92%
-  myapi.py	5	          1	      0	        80%
-  test.py	  8	          0	      0	        100%
+  Module    statements  missing excluded  coverage
+  Total     13          1       0         92%
+  myapi.py  5           1       0         80%
+  test.py   8           0       0         100%
   ```
   - 可以在页面点击文件，文件内部被标记成绿色的行，表示代码有执行，测试用例覆盖。
