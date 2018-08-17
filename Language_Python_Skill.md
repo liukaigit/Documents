@@ -268,3 +268,10 @@
     myprint
     This is a test.
   ```
+
+**14、模块引入**
+- 相对引入
+  - 比如对celery模块的引用，当前目录mycelery存在模块celery.py时，import celery将优先引入本地模块，若本地无该模块，将引入系统celery模块；
+- 绝对引入
+  - 通过添加如下引用，import celery将直接引用系统模块若需要调用本地celery模块，可采用import mycelery.celery方式导入
+  `from __future__ import absolute_import`
