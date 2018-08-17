@@ -361,3 +361,24 @@
 **33、mysql**
 - 限制显示行数方法，示例限制只显示满足条件的一行数据
     - `select * from table_name limit 1`
+    
+**34、redis命令**
+- `select db_num`
+    - 选择`redis`数据库，默认通过`redis-cli`连接`0`号数据库
+- `keys *`
+    - 查看当前数据库所有键值
+- `del key`
+    - 删除指定键
+- `flushdb`
+    - 清空当前数据库所有键
+- `type key`
+    - 查看`key`类型，用来决定用何种命令查看键值，目前常见的几种类型介绍如下
+- `string`类型
+    - `get key`查看键值
+- `list`类型
+    - `llen key`查看列表元素数量
+    - `lrange key start_num end_num` 查看指定区间元素
+- `hash`类型
+    - `hkeys key`查看包含的所有键值
+    - `hget key field`查看某个键值内容
+    
