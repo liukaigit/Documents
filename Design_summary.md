@@ -1,0 +1,5 @@
+- 设计时序图工具：
+  - 网址：
+    - https://www.websequencediagrams.com/
+  - 功用：
+    - 支持文本编辑自动生成时序图，无序一个个元素拖拽绘制
