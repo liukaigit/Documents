@@ -12,3 +12,7 @@
 - `ctrl + 加号`     展开当前代码块
 - `ctrl + shift + 减号`     折叠当前文件所有代码块
 - `ctrl + shift + 加号`     展开当前文件所有代码块
+
+**3、upload配置**
+- 参考链接
+  - https://baijiahao.baidu.com/s?id=1604069120033565795&wfr=spider&for=pc
