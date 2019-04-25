@@ -275,3 +275,10 @@
 - 绝对引入
   - 通过添加如下引用，import celery将直接引用系统模块若需要调用本地celery模块，可采用import mycelery.celery方式导入
   `from __future__ import absolute_import`
+
+**15、打印堆栈**
+- 命令
+  ```
+  import traceback
+  traceback.print_stack()
+  ```
