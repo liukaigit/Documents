@@ -1,3 +1,5 @@
+#### Redis操作
+**参考链接**
 - redis常用接口参考链接：
 	- https://blog.csdn.net/y472360651/article/details/77951595?locationNum=7&fps=1
 - redis阻塞事件：
@@ -103,17 +105,18 @@
 		- args：字典的key元组
 
 **3.其他操作**
-	- delete(*names)：删除Redis中的任意数据类型
-		- names：键
-	- exists(name)：判断键是否存在
-		- name：键
-	- keys(pattern="*")：获取符合规则的所有键
-		- pattern：通配符,默认*获取所有。常见:"*h"：h结尾的键；“h*”：h开头的键；“h*x”：h开头,x结尾的键；“h[ae]x”：获取名为hax或hex的键
-	- expaire(name,time)：设置超时时间
-		- name：键
-	- info：查看redis实时信息
-		- info clients：查看当前连接请情况；
-	- ttl：获取键的过期时间
-		- num表示过期秒
-		- -1 表示无过期时间
-		- -2 表示键不存在；
+
+- delete(*names)：删除Redis中的任意数据类型
+	- names：键
+- exists(name)：判断键是否存在
+	- name：键
+- keys(pattern="*")：获取符合规则的所有键
+	- pattern：通配符,默认*获取所有。常见:"*h"：h结尾的键；“h*”：h开头的键；“h*x”：h开头,x结尾的键；“h[ae]x”：获取名为hax或hex的键
+- expaire(name,time)：设置超时时间
+	- name：键
+- info：查看redis实时信息
+	- info clients：查看当前连接请情况；
+- ttl：获取键的过期时间
+	- num表示过期秒
+	- -1 表示无过期时间
+	- -2 表示键不存在；
