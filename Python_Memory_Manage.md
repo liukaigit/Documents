@@ -3,7 +3,7 @@
 Python内存管理机制包括：垃圾回收、引用技术和内存池机制，重点关注内存池机制；
 
 **1.内存池机制**
-- 分层的Python内存分配机制，如下所示：
+- 分层的Python内存分配机制（参考链接：http://svn.python.org/projects/python/trunk/Objects/obmalloc.c ），如下所示：
 ```
    Object-specific allocators
       _____   ______   ______       ________
