@@ -31,7 +31,7 @@ Python内存管理机制包括：垃圾回收、引用技术和内存池机制�
 ```
  Pyhon对象操作
   |
- Python内存池，PyObject_Malloc和PyMem_Malloc，小内存1~256KB直接分配，大内存大于256KB调用malloc申请（不释放free内存）
+ Python内存池，PyObject_Malloc和PyMem_Malloc，小内存1~256字节直接分配，大内存大于256字节调用malloc申请（不释放free内存）
   |
  C malloc/free操作
  -------
