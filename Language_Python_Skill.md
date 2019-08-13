@@ -282,3 +282,15 @@
   import traceback
   traceback.print_stack()
   ```
+
+**16、dict插入key和value**
+- setdefault
+  ```
+  mydict = dict()
+  test = "key"
+  testdict = mydict.setdefault(test, dict())
+  print testdict
+  {}
+  print mydict
+  {"key": {}}
+  ```
